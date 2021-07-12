@@ -6,10 +6,10 @@ INSERT INTO product (`name`,price,image) VALUES
 ( 'Pollo al spiedo'    , 1750 ,'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZK479cZhNXu-PSmQLfSRAIrSDkWEjam-uhA&usqp=CAU');
 
 INSERT INTO User(username,fullname,email,tel,adress,`password`,role) VALUES
-('MarioMar'  ,  'Mario Maran'     , 'MarioMaran@gmail.com'      , '01122334455', 'Dr. Gabriel Concordia 1332','sbv924sas',0 ),
-('JorgeGor'  , 'Jorge Gordon'     , 'JorgeGordon@gmail.com'     , '01155556666', 'El Salvador 312'           , 'contraseña-facil', 0),
-('ClaudiaCla', 'Claudia Clarinete', 'ClaudiaClarinete@gmail.com', '01144552233', 'Los pintores 301'          , 'contraseña-difícil', 0),
-('mrAdmin'   , 'Mr Admin'         , 'admin@gmail.com'           , '01122334455', 'calle admin 123'           , 'administrarpasion', 1);
+( '_admin_', '_admin_', 'admin@admin.com', '_admin_' , '_admin_' ,'secret-admin' , 1), 
+( '_user1_', '_user1_', 'user1@user.com', '_user1_' , '_user1_' ,'secret-user1' , 0),
+( '_user2_', '_user2_', 'user2@user.com', '_user2_' , '_user2_' ,'secret-user2' , 0),
+( '_user3_', '_user3_', 'user3@user.com', '_user3_' , '_user3_' ,'secret-user3' , 0) ;
 
 INSERT INTO paymethod(name,isactive) VALUES
 ( 'cash'   , 1 ),

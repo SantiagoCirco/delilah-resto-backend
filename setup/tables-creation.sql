@@ -27,8 +27,12 @@ CREATE TABLE IF NOT EXISTS `delilahresto`.`Product` (
   PRIMARY KEY (`id`)
   );
 
-SELECT * FROM `order`;
-SELECT * FROM `order_has_product`;
+  CREATE TABLE IF NOT EXISTS `delilahresto`.`paymethod` (
+  `id` INT(11) NOT NULL  AUTO_INCREMENT,
+  `name` VARCHAR(45) NOT NULL,
+  `isactive` TINYINT(1) NOT NULL DEFAULT 1,
+  PRIMARY KEY (`id`)
+  );
 
 CREATE TABLE IF NOT EXISTS `delilahresto`.`Order` (
   `id` INT(11) NOT NULL  AUTO_INCREMENT,
@@ -52,12 +56,7 @@ CREATE TABLE IF NOT EXISTS `delilahresto`.`Order` (
     ON UPDATE NO ACTION
     );
 
-CREATE TABLE IF NOT EXISTS `delilahresto`.`paymethod` (
-  `id` INT(11) NOT NULL  AUTO_INCREMENT,
-  `name` VARCHAR(45) NOT NULL,
-  `isactive` TINYINT(1) NOT NULL DEFAULT 1,
-  PRIMARY KEY (`id`)
-  );
+
 
 CREATE TABLE IF NOT EXISTS `delilahresto`.`Order_has_Product` (
   `Order_id` INT(11) NOT NULL,
